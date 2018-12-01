@@ -1,10 +1,10 @@
 let container = document.getElementById('container');
 
-removeChildren(container);
+ insertAfter(container);
 
 
-function removeChildren(container){
+function insertAfter(container){
     while(container.firstChild!=null){
-        container.removeChild(container.firstChild);
+        container.insertAfter(container.firstChild);
     }
 }
